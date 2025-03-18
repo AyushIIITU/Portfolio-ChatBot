@@ -1,0 +1,23 @@
+{
+  "name": "chat-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@huggingface/transformers": "^3.4.0",
+    "@langchain/community": "^0.3.36",
+    "@langchain/core": "^0.3.42",
+    "@langchain/langgraph": "^0.2.55",
+    "@langchain/ollama": "^0.2.0",
+    "cheerio": "^1.0.0",
+    "faiss-node": "^0.5.1",
+    "langchain": "^0.3.19"
+  }
+}
