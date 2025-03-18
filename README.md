@@ -53,7 +53,7 @@ let inputs = { question: "What are the techstack?" };
 const result = await graph.invoke(inputs);
 console.log(result.answer);
 ```
-```javascript
+```terminal
 The tech stack used includes:
 
 * React js, Node js, Bootstrap, MongoDB (Campus Management System)
@@ -66,7 +66,7 @@ let inputs = { question: "What are the a+b" };
 const result = await graph.invoke(inputs);
 console.log(result.answer);
 ```
-```javascript
+```terminal
 I don't know what the equation "a+b" refers to. The provided context appears to be a portfolio or resume for a software developer with 
 various projects, but there is no specific information about mathematical equations.
 ```
