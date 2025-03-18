@@ -53,7 +53,23 @@ let inputs = { question: "What are the techstack?" };
 const result = await graph.invoke(inputs);
 console.log(result.answer);
 ```
+```javascript
+The tech stack used includes:
 
+* React js, Node js, Bootstrap, MongoDB (Campus Management System)
+* React js, Tailwind CSS, Node processing, WebSocket integration, YOLO, and MongoDB (RoadSense)
+* Python, Ollama, LangChain, Flutter, and SQLlite (GeinAi AI Content Generation & MCQ Platform)
+* JavaScript, Node.js, CSS, HTML, and MySQL (BlindKart E-commerce Website)
+```
+```javascript
+let inputs = { question: "What are the a+b" };
+const result = await graph.invoke(inputs);
+console.log(result.answer);
+```
+```javascript
+I don't know what the equation "a+b" refers to. The provided context appears to be a portfolio or resume for a software developer with 
+various projects, but there is no specific information about mathematical equations.
+```
 ## Future Improvements
 - Implement API endpoints for chatbot interaction.
 - Enhance scraping capabilities for more dynamic data.
