@@ -17,7 +17,13 @@
     "@langchain/langgraph": "^0.2.55",
     "@langchain/ollama": "^0.2.0",
     "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "faiss-node": "^0.5.1",
-    "langchain": "^0.3.19"
+    "langchain": "^0.3.19",
+    "openai": "^4.87.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
   }
 }
