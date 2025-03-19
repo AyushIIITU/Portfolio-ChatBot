@@ -17,11 +17,14 @@
     "@langchain/langgraph": "^0.2.55",
     "@langchain/ollama": "^0.2.0",
     "cheerio": "^1.0.0",
+    "chromium-pickle-js": "^0.2.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "faiss-node": "^0.5.1",
+    "fs-extra": "^11.3.0",
     "langchain": "^0.3.19",
-    "openai": "^4.87.4"
+    "openai": "^4.87.4",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@types/express": "^5.0.0"
