@@ -16,8 +16,6 @@ const llm = new ChatOllama({
   model: "llama3.1:8b",  // Default value.
 });
 
-// const result = await model.invoke(["human", "Hello, how are you?"]);
-// console.log(result);  // Output: ["ollama", "I'm fine, thank you."]16149645600 21455957700
 
 const vectorStore = new FaissStore(embeddingModel, {});
 const cheerioLoader = new CheerioWebBaseLoader(
