@@ -68,9 +68,7 @@ const graph = new StateGraph(StateAnnotation)
   .addEdge("retrieve", "generate")
   .addEdge("generate", "__end__")
   .compile();
-let inputs = { question: "What are the techstack?" };
-console.log(graph);
-
+const inputs = { question: "What is the portfolio about?" };
 const result = await graph.invoke(inputs);
 // for (const stream_output of graph.astream(inputs)) {
 //     console.log(stream_output);

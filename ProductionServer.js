@@ -2,7 +2,7 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 import "cheerio";
-import { CheerioWebBaseLoader } from "@langchain/community/document_loaders/web/cheerio";
+import { PuppeteerWebBaseLoader } from "@langchain/community/document_loaders/web/puppeteer";
 import { Annotation, StateGraph } from "@langchain/langgraph";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/huggingface_transformers";
@@ -46,7 +46,7 @@ const loadAndIndexDocs = async () => {
       console.log("No FAISS index found. Scraping website and creating index...");
   
       // Scrape and process data
-      const cheerioLoader = new CheerioWebBaseLoader(
+      const cheerioLoader = new PuppeteerWebBaseLoader(
         "https://portfolio-ayushiiitus-projects.vercel.app/"
       );
       const docs = await cheerioLoader.load();
@@ -90,7 +90,6 @@ const generate = async (state) => {
   const prompt = `You are a portfolio assistant for question-answering tasks.
   Use the following pieces of retrieved context to answer the question.
   If you don't know the answer, just say that you don't know.
-  Use three sentences maximum and keep the answer concise.
 
   Question: ${state.question}
   Context: ${docsContent}
